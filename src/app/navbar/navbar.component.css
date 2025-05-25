@@ -1,0 +1,5 @@
+.navbar-button {
+}
+.navbar-active-button {
+    background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+}
