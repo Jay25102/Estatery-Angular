@@ -1,5 +1,20 @@
-.navbar-button {
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+.navbar-logo {
+    max-height: 40px;
+    max-width: 134px;
+}
+.navbar-logo-img {
+    max-height: 40px;
+    max-width: 134px;
+}
+.navbar-button {
+    
+}
+
 .navbar-active-button {
     background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
 }

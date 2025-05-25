@@ -1,5 +1,12 @@
-<nav>
+<nav class="navbar">
     <!-- logo -->
+    <a
+        class="navbar-logo"
+        ariaCurrentWhenActive="page" 
+        routerLink="/"
+        >
+    <img class="navbar-logo-img" src="Logotype_dark.png" alt="Estatery logo"/></a>
+    
 
     <!-- middle nav buttons -->
     <a 
@@ -26,12 +33,14 @@
         ariaCurrentWhenActive="page" 
         routerLink="/manage-property"
     >Manage Property</a>
+    <ng-icon name="matKeyboardArrowDownRound" />
     <a 
         class="navbar-button" 
         routerLinkActive="navbar-active-button" 
         ariaCurrentWhenActive="page" 
         routerLink="/resources"
     >Resources</a>
+    <ng-icon name="matKeyboardArrowDownRound" />
 
     <!-- login and signup -->
     <a 
@@ -43,5 +52,5 @@
         class="navbar-login" 
         ariaCurrentWhenActive="page" 
         routerLink="/signup"
-    >Sign Pp</a>
+    >Sign Up</a>
 </nav>
