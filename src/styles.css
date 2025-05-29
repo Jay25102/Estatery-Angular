@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Defining variables to be imported in component css files */
+:root {
+    /* colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #7065F0;
+    --color-light: #E0DEF7;
+    --color-secondary: #F7F7FD;
+    --color-gray: #6C727F;
+    --color-primary-dark: #100A55;
+    --color-dark: #000929;
+    --color-taro: #F0EFFB;
+
+    /* rem size from pixels */
+    --rem-144: 9rem;
+    --rem-96: 6rem;
+    --rem-64: 4rem;
+    --rem-48: 3rem;
+    --rem-36: 2.25rem;
+    --rem-32: 2rem;
+    --rem-24: 1.5rem;
+    --rem-20: 1.25rem;
+    --rem-16: 1rem;
+    --rem-8: 0.5rem;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}

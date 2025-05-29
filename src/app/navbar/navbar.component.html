@@ -9,48 +9,98 @@
     
 
     <!-- middle nav buttons -->
-    <a 
-        class="navbar-button" 
-        routerLinkActive="navbar-active-button" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/rent"
-    >Rent</a>
-    <a 
-        class="navbar-button" 
-        routerLinkActive="navbar-active-button" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/buy"
-    >Buy</a>
-    <a 
-        class="navbar-button" 
-        routerLinkActive="navbar-active-button" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/sell"
-    >Sell</a>
-    <a 
-        class="navbar-button" 
-        routerLinkActive="navbar-active-button" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/manage-property"
-    >Manage Property</a>
-    <ng-icon name="matKeyboardArrowDownRound" />
-    <a 
-        class="navbar-button" 
-        routerLinkActive="navbar-active-button" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/resources"
-    >Resources</a>
-    <ng-icon name="matKeyboardArrowDownRound" />
+    <div class="navbar-middle">
+        <a 
+            class="navbar-button" 
+            ariaCurrentWhenActive="page" 
+            routerLink="/rent"
+        >Rent</a>
+        <a 
+            class="navbar-button" 
+            ariaCurrentWhenActive="page" 
+            routerLink="/buy"
+        >Buy</a>
+        <a 
+            class="navbar-button" 
+            ariaCurrentWhenActive="page" 
+            routerLink="/sell"
+        >Sell</a>
+
+        <div class="navbar-button-dropdown">
+            <a 
+                class="navbar-button" 
+                ariaCurrentWhenActive="page" 
+                (click)="managePropertyToggle()"
+            >Manage Property<ng-icon name="matKeyboardArrowDownRound" /></a>
+            <ul class="navbar-dropdown {{manageProperty}}">
+                <li><a routerLink="/" (click)="managePropertyClose()">lorem ipsum</a></li>
+                <li><a routerLink="/" (click)="managePropertyClose()">lorem</a></li>
+                <li><a routerLink="/" (click)="managePropertyClose()">lorem</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-button-dropdown">
+            <a 
+                class="navbar-button" 
+                ariaCurrentWhenActive="page" 
+                (click)="resourcesToggle()"
+            >Resources<ng-icon name="matKeyboardArrowDownRound" /></a>
+            <ul class="navbar-dropdown {{resources}}">
+                <li><a routerLink="/" (click)="resourcesClose()">lorem</a></li>
+                <li><a routerLink="/" (click)="resourcesClose()">lorem ipsum</a></li>
+                <li><a routerLink="/" (click)="resourcesClose()">lorem</a></li>
+            </ul>
+        </div>
+    </div>      
 
     <!-- login and signup -->
-    <a 
-        class="navbar-login" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/login"
-    >Login</a>
-    <a 
-        class="navbar-login" 
-        ariaCurrentWhenActive="page" 
-        routerLink="/signup"
-    >Sign Up</a>
+    <div class="navbar-auth">
+        <a 
+            class="navbar-login" 
+            ariaCurrentWhenActive="page" 
+            routerLink="/login"
+        >Login</a>
+        <a 
+            class="navbar-login" 
+            ariaCurrentWhenActive="page" 
+            routerLink="/signup"
+        >Sign Up</a>
+
+        <div class="menu-icon" (click)="menuOpen()">
+            <ng-icon name="matMenuRound" size="48px"/>
+        </div>
+    </div>
+
+    <!-- sidebar menu -->
+     <div class="navbar-sidebar {{menuVisible}}">
+        <div class="navbar-sidebar-items">
+            <div (click)="menuClose()" class="navbar-sidebar-menu-icon">
+                <ng-icon name="matCloseRound" size="36px"/>
+            </div>
+
+            <a routerLink="/rent" class="navbar-sidebar-item" (click)="menuClose()">Rent</a>
+            <a routerLink="/buy" class="navbar-sidebar-item" (click)="menuClose()">Buy</a>
+            <a routerLink="/sell" class="navbar-sidebar-item" (click)="menuClose()">Sell</a>
+
+            <div class="navbar-sidebar-item" (click)="managePropertySidebarToggle()">
+                <a>Manage Property</a>
+                <ng-icon name="matKeyboardArrowDownRound" class="navbar-down-arrow"/>
+            </div>
+            <ul *ngIf="managePropertySidebar" class="navbar-sub-menu">
+                <li (click)="menuClose()"><a routerLink="/">lorem ipsum</a></li>
+                <li (click)="menuClose()"><a routerLink="/">lorem</a></li>
+                <li (click)="menuClose()"><a routerLink="/">lorem</a></li>
+            </ul>
+
+            <div class="navbar-sidebar-item" (click)="resourcesSidebarToggle()">
+                <a>Resources</a>
+                <ng-icon name="matKeyboardArrowDownRound" />
+            </div>
+            <ul *ngIf="resourcesSidebar" class="navbar-sub-menu">
+                <li (click)="menuClose()"><a routerLink="/">lorem ipsum</a></li>
+                <li (click)="menuClose()"><a routerLink="/">lorem</a></li>
+                <li (click)="menuClose()"><a routerLink="/">lorem</a></li>
+            </ul>
+        </div>
+     </div>
 </nav>

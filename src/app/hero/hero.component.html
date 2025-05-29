@@ -1,10 +1,23 @@
 <div class="hero">
     <!-- left side -->
-    <div>
+    <div class="hero-left-side">
         <!-- main text -->
-        <div>
-            <p>Buy, rent, or sell your property easily</p>
-            <p>A great platform to buy, sell, or even rent your properties without any commisions</p>
+        <div class="hero-main-text">
+            <p class="hero-title">Buy, rent, or sell your property easily</p>
+            <p class="hero-slogan">A great platform to buy, sell, or even rent your properties without any commisions</p>
+        </div>
+
+        <!-- statistics -->
+        <div class="hero-statistics">
+            <div>
+                <p>50k+ renters</p>
+                <p>believe in our service</p>
+            </div>
+
+            <div>
+                <p>10k+ properties</p>
+                <p>and house ready for occupancy</p>
+            </div>
         </div>
 
         <!-- mini navbar and search for properties (not functional) -->
@@ -31,22 +44,12 @@
             </div>
         </div>
 
-        <!-- statistics -->
-        <div>
-            <div>
-                <p>50k+ renters</p>
-                <p>believe in our service</p>
-            </div>
-
-            <div>
-                <p>10k+ properties</p>
-                <p>and house ready for occupancy</p>
-            </div>
-        </div>
+        
     </div>
 
     <!-- image -->
     <div>
         <img src="map.png"/>
+        <app-card [cardSize]="cardSizeService.small"></app-card>
     </div>
 </div>

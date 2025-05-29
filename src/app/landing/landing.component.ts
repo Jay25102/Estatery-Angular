@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { BenefitsComponent } from '../benefits/benefits.component';
 import { ListingsComponent } from '../listings/listings.component';
@@ -13,5 +13,7 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './landing.component.css'
 })
 export class LandingComponent {
-
+  small = signal('small');
+  medium = signal('medium');
+  large = signal('large');
 }

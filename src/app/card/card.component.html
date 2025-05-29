@@ -1,0 +1,18 @@
+<div class="card {{cardSize()}}">
+    <img src="{{imgUrl()}}"/>
+    <!-- text -->
+    <div>
+        <div>
+            <p>${{price()}}</p>
+            <p>/month</p>
+        </div>
+        <p>{{areaName()}}</p>
+        <p>{{location()}}</p>
+        <!-- line -->
+        <div></div>
+        <!-- numbers -->
+        <div>beds: {{numRooms()}}</div>
+        <div>baths: {{numBaths()}}</div>
+        <div>size: {{size()}}m<sup>2</sup></div>
+    </div>  
+</div>
