@@ -1,0 +1,99 @@
+.card {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--color-white);
+}
+.small {
+    
+}
+.medium {
+    height: 424px;
+}
+.large {
+
+}
+.absolute {
+    position: absolute;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.card-text {
+    margin: 24px 0 0 24px;
+}
+.card-price-month {
+    display: flex;
+    flex: row;
+    align-items: center;
+    width: 140px;
+    flex-wrap: nowrap;
+}
+.card-price {
+    color: var(--color-primary);
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    font-weight: bold;
+    margin: 0;
+}
+.card-month {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    font-weight: medium;
+    opacity: 50%;
+    color: var(--color-dark);
+    margin: 0 0 0 2px;
+}
+
+.card-location-info {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0 0 0;
+    width: 280px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid var(--color-taro);
+}
+.card-area-name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    margin: 0px;
+}
+.card-location {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: medium;
+    opacity: 50%;
+    color: var(--color-dark);
+}
+
+.card-stats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.card-stat-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-stat-section + .card-stat-section {
+    margin-left: 24px;
+}
+.card-icon {
+    height: 20px;
+    width: 20px;
+}
+.card-number {
+    margin: 0 0 0 8px;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--color-gray);
+}

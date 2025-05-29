@@ -15,4 +15,5 @@ export class CardComponent {
   numRooms = input(4);
   numBaths = input(2);
   size = input("6x7.5");
+  position = input();
 }

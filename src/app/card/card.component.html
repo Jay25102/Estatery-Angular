@@ -1,18 +1,30 @@
-<div class="card {{cardSize()}}">
-    <img src="{{imgUrl()}}"/>
+<div class="card {{cardSize()}} {{position()}}">
+    <img src="{{imgUrl()}}" class="card-img"/>
     <!-- text -->
-    <div>
-        <div>
-            <p>${{price()}}</p>
-            <p>/month</p>
+    <div class="card-text">
+        <div class="card-price-month">
+            <p class="card-price">${{price()}}</p>
+            <p class="card-month">/month</p>
         </div>
-        <p>{{areaName()}}</p>
-        <p>{{location()}}</p>
-        <!-- line -->
-        <div></div>
+
+        <div class="card-location-info">
+            <p class="card-area-name">{{areaName()}}</p>
+            <p class="card-location">{{location()}}</p>
+        </div>
         <!-- numbers -->
-        <div>beds: {{numRooms()}}</div>
-        <div>baths: {{numBaths()}}</div>
-        <div>size: {{size()}}m<sup>2</sup></div>
+        <div class="card-stats">
+            <div class="card-stat-section">
+                <img src="bed.png" class="card-icon"/>
+                <p class="card-number">{{numRooms()}}</p>
+            </div>
+            <div class="card-stat-section">
+                <img src="bath.png" class="card-icon"/>
+                <p class="card-number">{{numBaths()}}</p>
+            </div>
+            <div class="card-stat-section">
+                <img src="and_beyond.png" class="card-icon"/>
+                <p class="card-number">{{size()}}m<sup>2</sup></p>
+            </div>
+        </div>
     </div>  
 </div>

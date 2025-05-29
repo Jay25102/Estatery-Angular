@@ -131,6 +131,7 @@
     background-color: var(--color-white);
     border-radius: 0 8px 8px 8px;
     align-items: center;
+    box-shadow: -24px 32px 10px #00092905;
 }
 .hero-search-query {
     display: flex;
@@ -188,7 +189,29 @@
     font-size: 16px;
 }
 
+.hero-card {
+    position: absolute;
+    right: calc(100vw * 0.2);
+    top: 88px;
+}
 
+@media (max-width: 1300px) {
+    .hero-main-text {
+        margin: 36px 0 0 80px;
+    }
+    .hero-stats {
+        margin-left: 80px;
+    }
+    .hero-search {
+        margin-left: 80px;
+    }
+    .hero-card {
+        right: calc(100vw * 0.025);
+    }
+}
 
+@media (max-width: 1000px)  {
+    
+}
 
 
