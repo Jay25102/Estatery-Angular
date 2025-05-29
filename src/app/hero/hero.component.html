@@ -8,48 +8,54 @@
         </div>
 
         <!-- statistics -->
-        <div class="hero-statistics">
-            <div>
-                <p>50k+ renters</p>
-                <p>believe in our service</p>
+        <div class="hero-stats">
+            <div class="hero-stats-section">
+                <p class="hero-stats-number">50k+</p>
+                <p class="hero-stats-slogan">renters</p>
             </div>
 
-            <div>
-                <p>10k+ properties</p>
-                <p>and house ready for occupancy</p>
+            <div class="hero-stats-section">
+                <p class="hero-stats-number">10k+</p>
+                <p class="hero-stats-slogan">properties</p>
             </div>
         </div>
 
         <!-- mini navbar and search for properties (not functional) -->
-        <div>
+        <div class="hero-search">
             <!-- mini navbar -->
-            <nav>
-                <a>Rent</a>
-                <a>Buy</a>
-                <a>Sell</a>
+            <nav class="hero-navbar">
+                <a class="hero-navbar-item">Rent</a>
+                <a class="hero-navbar-item">Buy</a>
+                <a class="hero-navbar-item">Sell</a>
             </nav>
 
             <!-- location, when, and browse properties button -->
-            <!-- for now this is just text and not planned to be a functional component -->
-            <div>
-                <div>
-                    <p>Location</p>
-                    <p>Barcelona, Spain</p>
+            <!-- for now this is hardcoded text and not planned to be a functional component -->
+            <div class="hero-search-bottom">
+                <div class="hero-search-query">
+                    <p class="hero-search-question">Location</p>
+                    <p class="hero-search-answer">Barcelona, Spain</p>
                 </div>
-                <div>
-                    <p>When</p>
-                    <p>Select Move-in Date</p>
+                <div class="hero-search-query">
+                    <p class="hero-search-question">When</p>
+                    <div class="hero-search-calendar">
+                        <p class="hero-search-answer">Select Move-in Date</p>
+                        <ng-icon name="matCalendarMonthRound" color="gray"/>
+                    </div>
                 </div>
-                <button>Browse Properties</button>
+                <a class="hero-browse-button">
+                    <p class="hero-browse-button-text">Browse Properties</p>
+                </a>
             </div>
         </div>
-
-        
     </div>
 
     <!-- image -->
-    <div>
-        <img src="map.png"/>
-        <app-card [cardSize]="cardSizeService.small"></app-card>
+    <div class="hero-right-side">
+        <div class="hero-gradient"></div>
+        <img class="hero-background-img" src="map.png"/>
+        <!-- <app-card [cardSize]="cardSizeService.small"></app-card> -->
     </div>
+
+    <div class="hero-background"></div>
 </div>

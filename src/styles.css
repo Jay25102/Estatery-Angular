@@ -14,14 +14,18 @@
     --color-taro: #F0EFFB;
 
     /* rem size from pixels */
+    --rem-224: 14rem;
+    --rem-160: 10rem;
     --rem-144: 9rem;
     --rem-96: 6rem;
+    --rem-80: 5rem;
     --rem-64: 4rem;
     --rem-48: 3rem;
     --rem-36: 2.25rem;
     --rem-32: 2rem;
     --rem-24: 1.5rem;
     --rem-20: 1.25rem;
+    --rem-18: 1.125rem;
     --rem-16: 1rem;
     --rem-8: 0.5rem;
 }
