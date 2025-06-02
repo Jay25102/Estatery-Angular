@@ -3,12 +3,12 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { matKeyboardArrowRightRound } from '@ng-icons/material-icons/round';
 
 @Component({
-  selector: 'app-benefits',
+  selector: 'app-tenants-landlords',
   imports: [NgIcon],
   viewProviders: [provideIcons({matKeyboardArrowRightRound})],
-  templateUrl: './benefits.component.html',
-  styleUrl: './benefits.component.css'
+  templateUrl: './tenants-landlords.component.html',
+  styleUrl: './tenants-landlords.component.css'
 })
-export class BenefitsComponent {
+export class TenantsLandlordsComponent {
 
 }

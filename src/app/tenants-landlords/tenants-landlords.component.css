@@ -1,6 +1,6 @@
 @import '../../styles.css';
 
-.benefits {
+.tenants-landlords {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -8,16 +8,16 @@
     margin-top: 54px;
     justify-content: center;
 }
-.benefits-left-side {
+.tenants-landlords-left-side {
     margin-left: 40px;
     position: relative;
     height: 648px;
 }
-.benefits-right-side {
+.tenants-landlords-right-side {
     margin-left: 132px;
 }
 
-.benefits-vt {
+.tenants-landlords-vt {
     display: flex;
     flex-direction: row;
     flex-wrap: nowarp;
@@ -31,19 +31,19 @@
     left: 0px;
     top: 32px;
 }
-.benefits-vt-img {
+.tenants-landlords-vt-img {
     height: 64px;
     width: 64px;
     margin: 24px 0 24px 32px;
 }
-.benefits-vt-text {
+.tenants-landlords-vt-text {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 24px;
     margin-right: 56px;
 }
-.benefits-small-heading {
+.tenants-landlords-small-heading {
     font-weight: bold;
     font-size: 20px;
     line-height: 160%;
@@ -51,7 +51,7 @@
     color: var(--color-primary-alt);
     margin: 0px;
 }
-.benefits-small-description {
+.tenants-landlords-small-description {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0%;
@@ -59,12 +59,12 @@
     margin: 2px 0 0 0;
 }
 
-.benefits-img {
+.tenants-landlords-img {
     margin-left: 120px;
     width: 544px;
 }
 
-.benefits-bd {
+.tenants-landlords-bd {
     display: flex;
     flex-direction: row;
     flex-wrap: nowarp;
@@ -78,13 +78,13 @@
     right: 70px;
     background-color: var(--color-white);
 }
-.benefits-bd-text {
+.tenants-landlords-bd-text {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 24px 0 28px 32px;
 }
-.benefits-bd-img {
+.tenants-landlords-bd-img {
     width: 64px;
     height: 64px;
     margin-left: 37px;
@@ -93,7 +93,7 @@
     right: 32px;
 }
 
-.benefits-toggle {
+.tenants-landlords-toggle {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -105,7 +105,7 @@
     box-sizing: border-box;
     max-width: 360px;
 }
-.benefits-toggle-button {
+.tenants-landlords-toggle-button {
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -113,17 +113,17 @@
     margin: 8px;
     height: 48px;
 }
-.benefits-toggle-button + .benefits-toggle-button {
+.tenants-landlords-toggle-button + .tenants-landlords-toggle-button {
     margin-left: 32px;
 }
-.benefits-toggle-button:hover {
+.tenants-landlords-toggle-button:hover {
     cursor: pointer;
 }
 .toggled-on {
     background-color: var(--color-white);
     border: 2px solid #0E08540D;
 }
-.toggled-on .benefits-toggle-text {
+.toggled-on .tenants-landlords-toggle-text {
     color: var(--color-primary);
     font-size: 18px;
     font-weight: bold;
@@ -131,7 +131,7 @@
     letter-spacing: -0.5px;
     margin: 12px 28px;
 }
-.toggled-off .benefits-toggle-text {
+.toggled-off .tenants-landlords-toggle-text {
     color: var(--color-gray);
     font-size: 18px;
     font-weight: medium;
@@ -139,21 +139,21 @@
     letter-spacing: -0.5px;
 }
 
-.benefits-text-section {
+.tenants-landlords-text-section {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 32px 0;
     width: 444px;
 }
-.benefits-title {
+.tenants-landlords-title {
     font-weight: bold;
     font-size: 40px;
     line-height: 140%;
     letter-spacing: -1%;
     margin: 0px;
 }
-.benefits-description {
+.tenants-landlords-description {
     font-weight: medium;
     font-size: 16px;
     line-height: 160%;
@@ -163,7 +163,7 @@
     color: var(--color-gray);
 }
 
-.benefits-see-more {
+.tenants-landlords-see-more {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -174,10 +174,10 @@
     width: 150px;
     height: 48px;
 }
-.benefits-see-more:hover {
+.tenants-landlords-see-more:hover {
     cursor: pointer;
 }
-.benefits-see-more-text {
+.tenants-landlords-see-more-text {
     font-weight: bold;
     color: var(--color-white);
     line-height: 140%;
@@ -186,17 +186,17 @@
 }
 
 @media (width < 1350px) {
-    .benefits {
+    .tenants-landlords {
         flex-direction: column;
         margin-top: 48px;
         align-items: center;
         justify-content: center;
     }
-    .benefits-left-side {
+    .tenants-landlords-left-side {
         margin: 0 24px;
         width: 544px;
     }
-    .benefits-right-side {
+    .tenants-landlords-right-side {
         margin: 54px 15px 0 15px;
         display: flex;
         flex-direction: column;
@@ -204,30 +204,30 @@
         justify-content: center;
     }
 
-    .benefits-toggle {
+    .tenants-landlords-toggle {
         width: 327px;
     }
-    .benefits-toggle-button + .benefits-toggle-button {
+    .tenants-landlords-toggle-button + .tenants-landlords-toggle-button {
         margin-left: 16px;
     }
 
-    .benefits-img {
+    .tenants-landlords-img {
         margin: 0px;
     }
-    .benefits-vt {
+    .tenants-landlords-vt {
         left: -8px;
     }
-    .benefits-text-section {
+    .tenants-landlords-text-section {
         text-align: center;
         align-items: center;
     }
-    .benefits-see-more {
+    .tenants-landlords-see-more {
         width: 327px;
     }
 }
 
 @media (width < 1000px) {
-    .benefits-left-side {
+    .tenants-landlords-left-side {
         width: 327px;
         height: 460px;
         /* background-color: var(--color-light); */
@@ -235,66 +235,66 @@
         justify-content: flex-end;
         border-radius: 8px;
     }
-    .benefits-right-side {
+    .tenants-landlords-right-side {
         width: 375px;
         margin: 76px 24px 0 24px;
     }
-    .benefits-img {
+    .tenants-landlords-img {
         width: 327px;
         object-fit: cover;
         border-radius: 8px;
     }
 
-    .benefits-vt {
+    .tenants-landlords-vt {
         width: 317px;
         height: 80px; 
     }
-    .benefits-vt-text {
+    .tenants-landlords-vt-text {
         margin: 16px 16px 24px 16px;
     }
-    .benefits-vt-img { 
+    .tenants-landlords-vt-img { 
         width: 48px;
         height: 48px;
         margin: 16px 0 16px 24px;
     }
-    .benefits-small-heading {
+    .tenants-landlords-small-heading {
         font-size: 18px;
         line-height: 145%;
         letter-spacing: -0.5%;
     }
-    .benefits-small-description {
+    .tenants-landlords-small-description {
         font-size: 14px;
         line-height: 140%;
         letter-spacing: 0%;
     }
 
-    .benefits-bd {
+    .tenants-landlords-bd {
         height: 80px;
         width: 282px;
         right: 24px;
         bottom: -28px;
     }
-    .benefits-bd-img {
+    .tenants-landlords-bd-img {
         width: 48px;
         height: 48px;
         top: -24px;
         right: 24px;
     }
-    .benefits-bd-text {
+    .tenants-landlords-bd-text {
         margin: 16px 42px 16px 24px;
     }
     
     
-    .benefits-text-section {
+    .tenants-landlords-text-section {
         margin-top: 32px;
         width: 327px;
     }
-    .benefits-title {
+    .tenants-landlords-title {
         font-size: 32px;
         line-height: 125%;
         letter-spacing: -1%;
     }
-    .benefits-description {
+    .tenants-landlords-description {
         width: 327px;
         font-size: 16px;
         line-height: 160%;
