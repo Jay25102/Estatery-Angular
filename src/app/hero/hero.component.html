@@ -43,8 +43,10 @@
                         <ng-icon name="matCalendarMonthRound" color="gray"/>
                     </div>
                 </div>
+                <p class="hero-search-location-text">Search location</p>
                 <a class="hero-browse-button">
                     <p class="hero-browse-button-text">Browse Properties</p>
+                    <ng-icon name="matSearchRound" color="white" size="20px" class="hero-search-icon"/>
                 </a>
             </div>
         </div>
@@ -53,8 +55,17 @@
     <!-- image -->
     <div class="hero-right-side">
         <div class="hero-gradient"></div>
-        <img class="hero-background-img" src="map.png"/>
+        <img class="hero-background-img" src="map_with_icons.png"/>
         <app-card [cardSize]="cardSizeService.medium" class="hero-card"></app-card>
+        <app-card 
+            [cardSize]="cardSizeService.small" 
+            [location]="'Palm Harbor, TX'" 
+            [areaName]="'Tarpon Bay'"
+            [price]="'1,600'"
+            [size]="'6x8'"
+            [imgUrl]="'tarpon_bay.png'"
+            class="hero-card-small"
+        ></app-card>
     </div>
 
     <div class="hero-background"></div>

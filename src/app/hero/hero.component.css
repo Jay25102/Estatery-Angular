@@ -188,14 +188,28 @@
     font-weight: bold;
     font-size: 16px;
 }
+.hero-search-icon {
+    display: none;
+}
+.hero-search-location-text {
+    display: none;
+}
 
 .hero-card {
     position: absolute;
-    right: calc(100vw * 0.2);
+    right: 364px;
     top: 88px;
+}
+.hero-card-small {
+    position: absolute;
+    right: 104px;
+    bottom: 102px;
 }
 
 @media (max-width: 1300px) {
+    .hero-card-small {
+        display: none;
+    }
     .hero-main-text {
         margin: 36px 0 0 80px;
     }
@@ -211,7 +225,87 @@
 }
 
 @media (max-width: 1000px)  {
-    
+    .hero-card, .hero-right-side, .hero-search-query {
+        display: none;
+    }
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-left-side {
+        margin: 48px 24px 0px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+    }
+    .hero-title {
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: -1%;
+    }
+    .hero-slogan {
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: -0.5%;
+    }
+    .hero-stats {
+        margin-left: 0px;
+    }
+    .hero-main-text {
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        margin-left: 0px;
+    }
+    .hero-navbar {
+        width: 327px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-navbar-item {
+        padding: 15px 37px;
+    }
+    .hero-search {
+        order: 2;
+    }
+    .hero-stats {
+        order: 3;
+    }
+    .hero-search-bottom {
+        width: 327px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-browse-button {
+        padding: 14px;
+        margin: 16px;
+    }
+    .hero-browse-button-text {
+        display: none;
+    }
+    .hero-search-icon {
+        display: flex;
+    }
+    .hero-search-location-text {
+        display: flex;
+        margin: 16px 28px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: var(--color-gray);
+        font-weight: medium;
+    }
 }
 
 
