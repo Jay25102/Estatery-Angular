@@ -95,8 +95,8 @@
     justify-content: center;
     align-items: center;
     visibility: visible;
-    width: 48px;
-    margin: 0 126px;
+    min-width: 214px;
+    
 }
 .navbar-login {
     text-decoration: none;
@@ -116,7 +116,7 @@
     border: none;
     background-color: var(--color-primary);
     color: var(--color-white);
-    margin-right: var(--rem-48);
+    width: 106px;
 }
 .menu-icon {
     display: flex;
@@ -231,6 +231,9 @@
     }
     .menu-icon {
         visibility: visible;
+    }
+    .navbar-auth {
+        width: 48px;
     }
 }
 
