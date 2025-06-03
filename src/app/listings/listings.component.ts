@@ -84,8 +84,8 @@ export class ListingsComponent {
     this.scrWidth = window.innerWidth;
     // console.log(this.scrWidth);
     if (this.scrWidth < 1200) {
-      this.cardSize = signal('medium');
-      console.log("setting cardSize to " + this.cardSize);
+      this.cardSize = signal('small');
+      // console.log("setting cardSize to " + this.cardSize);
     }
     else {
       this.cardSize = signal('large');
