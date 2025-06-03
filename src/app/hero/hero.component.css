@@ -206,7 +206,7 @@
     bottom: 102px;
 }
 
-@media (max-width: 1300px) {
+@media (width <= 1400px) {
     .hero-card-small {
         display: none;
     }
