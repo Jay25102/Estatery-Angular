@@ -4,10 +4,11 @@ import { TenantsLandlordsComponent } from '../tenants-landlords/tenants-landlord
 import { ListingsComponent } from '../listings/listings.component';
 import { CtaComponent } from '../cta/cta.component';
 import { FooterComponent } from '../footer/footer.component';
+import { BenefitsComponent } from '../benefits/benefits.component';
 
 @Component({
   selector: 'app-landing',
-  imports: [HeroComponent, TenantsLandlordsComponent, ListingsComponent, CtaComponent, FooterComponent],
+  imports: [HeroComponent, TenantsLandlordsComponent, ListingsComponent, CtaComponent, FooterComponent, BenefitsComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
 })
