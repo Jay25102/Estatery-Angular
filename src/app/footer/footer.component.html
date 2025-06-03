@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<div class="footer">
+    <div class="footer-top">
+        <img src="Logotype_dark.png" class="footer-logo"/>
+
+        <div class="footer-grid">
+            @for (section of footerLinks; track section.id) {
+                <div class="footer-section">
+                    <p class="footer-heading">{{section.heading}}</p>
+                    @for (link of section.links; track link) {
+                        <a class="footer-link">{{link}}</a>
+                    }
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="footer-copyright">©2021 Estatery. All rights reserved</p>
+
+        <div class="footer-social-section">
+            <a class="footer-social">
+                <img src="facebook.png"/>
+            </a>
+            <a class="footer-social">
+                <img src="instagram.png"/>
+            </a>
+            <a class="footer-social">
+                <img src="twitter.png"/>
+            </a>
+            <a class="footer-social">
+                <img src="linkedin.png"/>
+            </a>
+        </div>
+    </div>
+</div>
