@@ -1,0 +1,55 @@
+@import '../../styles.css';
+
+.listings {
+    height: 1186px;
+    background-image: linear-gradient(var(--color-white), var(--color-taro));
+    margin-top: 80px;
+}
+
+.listings-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 160px 0 160px;
+}
+.listings-text {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+}
+.listings-title {
+    color: var(--color-primary-alt);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: -1%;
+    margin: 0px;
+}
+.listings-description {
+    color: var(--color-primary-alt);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    margin: 16px 0 0 0;
+}
+
+.listings-button {
+    width: 253px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+}
+.listings-button:hover {
+    cursor: pointer;
+}
+.listings-button p {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
