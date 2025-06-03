@@ -78,6 +78,7 @@
     opacity: 50%;
     color: var(--color-dark);
     margin: 0 0 0 2px;
+    white-space: nowrap;
 }
 .large .card-month {
     font-size: 16px;
