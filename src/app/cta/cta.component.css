@@ -1,0 +1,148 @@
+@import '../../styles.css';
+
+.cta {
+    height: 442px;
+    background-color: var(--color-primary-alt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta-promise {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    color: var(--color-primary);
+    margin: 64px 0 0 0;
+}
+.cta-question {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: -1%;
+    color: var(--color-white);
+    margin: 8px 0 0 0;
+}
+.cta-discover {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: var(--color-white);
+    margin: 16px 0 0 0;
+}
+
+.cta-email {
+    width: 543px;
+    height: 80px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0 0 0;
+}
+.cta-email-input {
+    width: 320px;
+    height: 78px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding-left: 24px;
+}
+.cta-email-input:focus {
+    border: none;
+    outline: none;
+}
+.cta-submit-button {
+    width: 137px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta-submit-button:hover {
+    cursor: pointer;
+}
+.cta-submit-text {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--color-white);
+    margin: 0px;
+}
+
+.cta-join {
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--color-gray);
+    margin: 24px 0 0 0;
+    text-align: center;
+}
+.cta-join span {
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--color-white);
+    margin: 0;
+    height: 16px;
+}
+
+@media (width <= 800px) {
+    .cta {
+        height: 480px;
+    }
+    .cta-promise {
+        margin: 48px 0 0 0;
+    }
+    .cta-question {
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -1%;
+    }
+    .cta-discover {
+        max-width: 327px;
+        text-align: center;
+    }
+
+    .cta-email {
+        width: 327px;
+        height: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 48px 0 0 0;
+        background-color: transparent;
+    }
+    .cta-email-input {
+        width: 327px;
+        height: 56px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+    .cta-submit-button {
+        width: 327px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: var(--color-primary);
+        margin: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cta-submit-text {
+        font-weight: bold;
+    }
+
+    .cta-join {
+        max-width: 327px;
+    }
+}
