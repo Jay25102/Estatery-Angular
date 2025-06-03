@@ -12,8 +12,9 @@ export class CardComponent {
   price = input("2,700");
   areaName = input("Beverly Springfield");
   location = input("2821 Lake Sevilla, Palm Harbor, TX");
-  numRooms = input(4);
-  numBaths = input(2);
+  numRooms = input('4');
+  numBaths = input('2');
   size = input("6x7.5");
   position = input();
+  isPopular = input("false");
 }

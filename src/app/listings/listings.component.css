@@ -53,3 +53,21 @@
     line-height: 150%;
     letter-spacing: 0%;
 }
+
+.listings-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0 0 0;
+}
+.listings-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.listings-row + .listings-row {
+    margin-top: 32px;
+}
+.listings-card + .listings-card {
+    margin-left: 32px;
+}
