@@ -1,5 +1,6 @@
 import { Component, inject, HostListener, afterNextRender, signal } from '@angular/core';
 import { CardComponent } from '../card/card.component';
+import { CardsizesService } from "../services/cardsizes.service";
 
 @Component({
   selector: 'app-listings',
@@ -8,12 +9,11 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './listings.component.css'
 })
 export class ListingsComponent {
-  cardSize = signal('large');
-  scrWidth:any;
+  cardSizeService = inject(CardsizesService);
 
   // currently displaying hardcoded cards since there is no backend
   // change this later
-  cardsTop = [
+  sampleCards = [
     {
       imgUrl: 'palm_harbor.png',
       price: '2,095',
@@ -44,8 +44,6 @@ export class ListingsComponent {
       size: '8x10',
       isPopular: 'true',
     },
-  ]
-  cardsBot = [
     {
       imgUrl: 'st_crystal.png',
       price: '2,400',
@@ -77,22 +75,4 @@ export class ListingsComponent {
       isPopular: 'false',
     },
   ]
-
-  @HostListener('window:resize', ['$event'])
-  getScreenSize(): void {
-    console.log(this.cardSize);
-    this.scrWidth = window.innerWidth;
-    // console.log(this.scrWidth);
-    if (this.scrWidth < 1200) {
-      this.cardSize = signal('small');
-      // console.log("setting cardSize to " + this.cardSize);
-    }
-    else {
-      this.cardSize = signal('large');
-    }
-  }
-
-  constructor() {
-    afterNextRender(() => this.getScreenSize());
-  }
 }

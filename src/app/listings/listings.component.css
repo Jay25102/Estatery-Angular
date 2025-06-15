@@ -4,6 +4,7 @@
     height: 1186px;
     background-image: linear-gradient(var(--color-white), var(--color-taro));
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .listings-top {
@@ -54,20 +55,48 @@
     letter-spacing: 0%;
 }
 
-.listings-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.listings-container {
     margin: 48px 0 0 0;
-}
-.listings-row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
-.listings-row + .listings-row {
-    margin-top: 32px;
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 424px);
+    justify-content: center;
+    gap: 24px;
 }
-.listings-card + .listings-card {
-    margin-left: 32px;
+
+@media (width <= 1200px) {
+    .listings {
+        height: 1600px;
+    }
+    .listings-top {
+        margin: 80px 80px 0 80px;
+    }
+    .listings-grid {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 424px);
+        gap: 24px;
+    }
+}
+
+@media (width <= 850px) {
+    .listings {
+        height: 1186px;
+    }
+    .listings-top {
+        margin: 80px 80px 0 80px;
+    }
+    .listings-grid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        width: 500px;
+    }
 }

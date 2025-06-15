@@ -27,6 +27,12 @@
     left: -8px;
     top: 184px;
 }
+.small .popular-true {
+    position: absolute;
+    height: 40px;
+    left: -8px;
+    top: 184px;
+}
 
 .card-img {
     height: 200px;
